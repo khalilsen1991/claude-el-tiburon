@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050810;
+  --foreground: #e8edf5;
+  --muted: #9fb3c8;
+  --accent: #36e0a9;
+  --accent-strong: #14b8a6;
+  --card: #0c1324;
+  --stroke: #1b2436;
+  --shadow: 0 20px 80px rgba(5, 8, 16, 0.35);
 }
 
 @theme inline {
@@ -12,15 +18,25 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(circle at 20% 20%, #132038 0, transparent 30%),
+    radial-gradient(circle at 80% 0%, #102032 0, transparent 28%),
+    var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.glass {
+  background: color-mix(in srgb, #0d1729 80%, transparent);
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow);
 }
