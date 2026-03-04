@@ -14,31 +14,34 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "El Tiburon | Conversion & Growth Platform",
-    template: "%s | El Tiburon",
+    default: "Global Maritime | Buques Pesqueros y Transporte Marítimo",
+    template: "%s | Global Maritime",
   },
   description:
-    "El Tiburon is a B2B platform built to boost conversion rates and accelerate sustainable growth.",
+    "Gestión integral de flota pesquera y transporte marítimo. 10 buques navegando por océanos del mundo. Tecnología de última generación para pesca industrial y logística marina.",
   keywords: [
-    "El Tiburon",
-    "B2B conversion platform",
-    "growth marketing",
-    "sales acceleration",
-    "customer journey optimization",
+    "buques pesqueros",
+    "transporte marítimo",
+    "flota global",
+    "pesca industrial",
+    "logística marina",
+    "gestión de flota",
+    "shipping",
+    "maritime",
   ],
   openGraph: {
-    title: "El Tiburon | Conversion & Growth Platform",
+    title: "Global Maritime | Flota de Buques Pesqueros",
     description:
-      "El Tiburon helps revenue teams improve conversions and scale growth with actionable insights.",
+      "Coordinamos 10 buques navegando por Atlántico, Pacífico, Índico y más. Pesca industrial y transporte marítimo con tecnología avanzada.",
     url: "/",
-    siteName: "El Tiburon",
+    siteName: "Global Maritime",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "El Tiburon | Conversion & Growth Platform",
+    title: "Global Maritime | Gestión de Flota Marítima",
     description:
-      "Conversion and growth platform for B2B teams that need measurable results.",
+      "10 buques pesqueros y de transporte navegando por los océanos del mundo.",
   },
 };
 
